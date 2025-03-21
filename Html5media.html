@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements Demonstration</title>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Top 3 Roman Contributions</h2>
+        <ol type="I">
+            <li>Aqueduct Systems</li>
+            <li>Legal Framework</li>
+            <li>Road Networks</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Nature Image</h2>
+        <img src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg" 
+             alt="Beautiful landscape with mountains and lake"
+             width="600"
+             height="400">
+    </section>
+
+    <!-- Contacts Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Main St</td>
+                    <td>555-1234</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak Ave</td>
+                    <td>555-5678</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>Bob Johnson</td>
+                    <td>789 Pine Rd</td>
+                    <td>555-9012</td>
+                    <td>bob@example.com</td>
+                </tr>
+                <tr>
+                    <td>Alice Brown</td>
+                    <td>321 Elm St</td>
+                    <td>555-3456</td>
+                    <td>alice@example.com</td>
+                </tr>
+                <tr>
+                    <td>Charlie Wilson</td>
+                    <td>654 Maple Ave</td>
+                    <td>555-7890</td>
+                    <td>charlie@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <!-- Text Inputs -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" 
+                       placeholder="Enter your full name"
+                       required
+                       minlength="3"
+                       maxlength="50"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@domain.com"
+                       required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                       placeholder="At least 8 characters"
+                       required
+                       pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"><br><br>
+
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" id="birthdate" name="birthdate"
+                       required><br><br>
+
+                <!-- Dropdown -->
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="usa">United States</option>
+                    <option value="can">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                </select><br><br>
+
+                <!-- Radio Buttons -->
+                <label>Subscription Type:</label>
+                <input type="radio" id="free" name="subscription" value="free" required>
+                <label for="free">Free</label>
+                
+                <input type="radio" id="premium" name="subscription" value="premium">
+                <label for="premium">Premium</label><br><br>
+
+                <!-- Checkboxes -->
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label><br>
+                
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label><br><br>
+
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Multimedia Elements -->
+    <section>
+        <h2>Multimedia Content</h2>
+        
+        <h3>Sample Video</h3>
+        <video width="400" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <h3>Sample Audio</h3>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+</body>
+</html>
